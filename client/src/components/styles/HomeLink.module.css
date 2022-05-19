@@ -1,20 +1,31 @@
 .wrapper {
-    position: relative;
-    display: block;
-    width: 128px;
-    height: 128px;
-    transition: 0.3s;
-    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-align: center;
 }
 
-.wrapper:hover {
+.iconWrapper {
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 160px;
+    transition: 0.3s;
+    /* filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5)); */
+}
+
+.iconWrapper:hover {
     transform: translateY(-8px);
-    filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.3));
+}
+
+.iconWrapper:active {
+    filter: drop-shadow(0px 8px 2px rgba(0, 0, 0, 0.3)) brightness(1.1);
 }
 
 .hexagon {
     position: absolute;
-    z-index: -1;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -28,6 +39,25 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.separator {
     width: 60%;
-    height: 60%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 12px 24px;
 }
