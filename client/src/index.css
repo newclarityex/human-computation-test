@@ -3,6 +3,8 @@
 :root {
     --main-bg-color: #4D7298;
     --main-text-color: #fff;
+    --secondary-bg-color: #313a57;
+    --link-color: #20be86;
 }
 
 html,
@@ -18,4 +20,12 @@ body {
 #root {
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .hide-mobile {
+        display: none;
+    }
 }
