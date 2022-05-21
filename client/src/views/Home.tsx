@@ -40,6 +40,7 @@ export default function Home() {
                         </span>
                     </a>
                     <br />
+                    <br />
                 </div>
             </div>
         </>

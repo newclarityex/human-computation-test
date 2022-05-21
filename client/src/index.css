@@ -2,9 +2,10 @@
 
 :root {
     --main-bg-color: #4D7298;
-    --main-text-color: #fff;
     --secondary-bg-color: #313a57;
+    --main-text-color: #fff;
     --link-color: #20be86;
+    --graph-color: #2FC6A8;
 }
 
 html,
@@ -28,4 +29,22 @@ body {
     .hide-mobile {
         display: none;
     }
+}
+
+.fade-in-active {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.fade-out-active {
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
 }
